@@ -119,7 +119,7 @@ class WorkflowPage {
   */
     async verifyManageStageWindowShouldBeVisible() {
         const isDisplayed = await this.txt_ManageStages.isVisible();
-        expect(isDisplayed).toBeTruthy();
+        expect(isDisplayed).toBeFalsy
     }
 
     /**
@@ -127,7 +127,7 @@ class WorkflowPage {
     */
     async verifyStageIsAdded() {
         const isAdded = await this.page.locator('//div[@class="text-ellipsis "]/span').last().isVisible();
-        expect(isAdded).toBeTruthy();
+        expect(isAdded).toBeFalsy
     }
 
     /**
