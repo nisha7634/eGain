@@ -33,7 +33,7 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/build-vtest/PLAYWRIGHT-TS-UI-API-FW.git
+   git clone https://github.com/nisha7634/eGain.git
 
 2. Install dependencies:
    ```bash
