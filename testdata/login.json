@@ -1,0 +1,9 @@
+{
+    "validUser1": {
+        "username": "demouser1",
+        "password": "Pa55word",
+        "workflowType":"Article",
+        "articleType": "Rich Message",
+        "workflow":"VtestWorkflow"
+    }
+}

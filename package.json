@@ -1,0 +1,22 @@
+{
+  "name": "iris-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "Tests": "npx playwright test || powershell -command Compress-Archive -Path playwright-report -DestinationPath playwright-report.zip -Force"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.10.6",
+    "allure-playwright": "^2.15.1"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "dotenv": "^16.3.1",
+    "exceljs": "^4.4.0"
+  }
+}

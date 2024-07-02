@@ -1,0 +1,54 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="161.14521000000002">
+<testsuite name="tests\Article\article.spec.js" timestamp="2024-07-01T14:31:30.865Z" hostname="chromium" tests="1" failures="1" skipped="0" time="155.518" errors="0">
+<testcase name="KB-1087 - Verify that author is able to create portal." classname="tests\Article\article.spec.js" time="155.518">
+<failure message="article.spec.js:31:1 KB-1087 - Verify that author is able to create portal." type="FAILURE">
+<![CDATA[  [chromium] › tests\Article\article.spec.js:31:1 › KB-1087 - Verify that author is able to create portal. 
+
+    Test timeout of 150000ms exceeded.
+
+    Error: locator.click: Test timeout of 150000ms exceeded.
+    Call log:
+      - waiting for locator('#btn-confirmation-modal-yes')
+
+
+       at page-objects\login-pages\login.page.js:87
+
+      85 |     await this.btn_SavePortal.click()
+      86 |     await this.btn_ClosePortal.click()
+    > 87 |     await this.btn_YesPortal.click()
+         |                              ^
+      88 |   }
+      89 |
+      90 |   async enableAttachment() {
+
+        at LoginPage.createPortal (c:\Users\DELL\Documents\Downloads\eGainPOC-20240701T073933Z-001\eGainPOC\page-objects\login-pages\login.page.js:87:30)
+        at c:\Users\DELL\Documents\Downloads\eGainPOC-20240701T073933Z-001\eGainPOC\tests\Article\article.spec.js:59:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    eGainPOC\test-results\tests-Article-article-KB-1-09650-r-is-able-to-create-portal--chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    eGainPOC\test-results\tests-Article-article-KB-1-09650-r-is-able-to-create-portal--chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace eGainPOC\test-results\tests-Article-article-KB-1-09650-r-is-able-to-create-portal--chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Element is visible and clicked
+Generated Title: Vtest1572
+Vtest1572
+Create Topic
+Generated Title: test1572
+
+[[ATTACHMENT|..\test-results\tests-Article-article-KB-1-09650-r-is-able-to-create-portal--chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\tests-Article-article-KB-1-09650-r-is-able-to-create-portal--chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
