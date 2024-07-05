@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { promises } from "dns";
 const data = require("../../testdata/login.json")
 const { LoginPage } = require('../../page-objects/login-pages/login.page').default;
 const { ArticlePage } = require('../../page-objects/Articles/article.page').default;
@@ -59,7 +60,7 @@ test('KB-1087 - Verify that author is able to create portal.', async ({ page }) 
     await loginPage.createPortal(portalName)
   });
 
-  test('KB-1798 - Verify that user is able to add attachment in article through drag n Drop option', async ({ page }) => {
+test('KB-1798 - Verify that user is able to add attachment in article through drag n Drop option', async ({ page }) => {
     const loginPage = new LoginPage(page);
     const articlePage = new ArticlePage(page)
     await loginPage.navigate();
@@ -78,3 +79,23 @@ test('KB-1087 - Verify that author is able to create portal.', async ({ page }) 
     await page.waitForTimeout(6000)
     await loginPage.addAttachment()
   })
+
+  test('Api testing', async ({ page }) => {
+    const url = 'https://letcode.in/elements'; 
+
+    await page.goto(url)
+
+    const [response] = await Promise.all([
+      page.waitForResponse(res=>
+        res.status()==200
+        &&
+        res.url()=="https://api.github.com/users/ortonikc"
+        &&
+        res.body()
+      ),
+      page.fill("input[name='username']","ortonikc"),
+      page.click("button")
+    ])
+    console.log(await response.json())
+
+});

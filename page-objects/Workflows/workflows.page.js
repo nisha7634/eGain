@@ -48,6 +48,8 @@ class WorkflowPage {
    */
     async ClickOnManageStages() {
         await this.btn_ManageStages.click();
+        let stage = this.btn_ManageStages.textContent();
+        console.log(stage)
     }
 
     /**
@@ -119,7 +121,10 @@ class WorkflowPage {
   */
     async verifyManageStageWindowShouldBeVisible() {
         const isDisplayed = await this.txt_ManageStages.isVisible();
-        expect(isDisplayed).toBeFalsy
+        //const text = await btn_ManageStages.textContent();
+        // Verify the text using expect assertion
+        expect("Manage Stages").toBe('Manage Stages2');
+        
     }
 
     /**

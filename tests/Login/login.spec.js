@@ -8,5 +8,3 @@ const topicName = `test${randomNumber}`
 const portalName = `eGain${randomNumber}`
 
 
-
-

@@ -39,8 +39,8 @@ class LoginPage {
 
   }
 
-  async navigate() {
-    await this.page.goto('https://eg5076epr27l.egain.cloud/');
+  async navigate(url: String) {
+    await this.page.goto(url);
   }
 
   async loginToApplication(username, password) {
