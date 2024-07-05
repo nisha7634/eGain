@@ -95,11 +95,17 @@ class ArticlePage {
 
   //
 
+ /**
+ * This function is used to Averify theedit folder Window Should Get displayed
+ */
 
   async clickSendTo() {
     await this.sendToBtn.click()
   }
 
+   /**
+ * This function is used to Averify theedit folder Window Should Get displayed
+ */
   async getStageName() {
     await this.select_Stage.textContent();
   }
