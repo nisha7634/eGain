@@ -1,9 +1,9 @@
 ![Logo](https://www.vtestcorp.com/secure/wp-content/uploads/2020/08/160-x-600-01.jpg)
-# Web and API Automation Framework using Microsoft PlayWright with TypeScript
+# Web Automation Framework using Microsoft PlayWright with TypeScript
 
 ## Overview
 
-This project is a Playwright framework using TypeScript and follows the Page Object Model (POM) design pattern for testing UI and APIs. It also incorporates data-driven testing by reading test data from JSON files.
+This project is a Playwright framework using TypeScript and follows the Page Object Model (POM) design pattern for testing UI. It also incorporates data-driven testing by reading test data from JSON files.
 
 ## Features
 
@@ -33,7 +33,7 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/build-vtest/PLAYWRIGHT-TS-UI-API-FW.git
+   git clone https://github.com/nisha7634/eGain.git
 
 2. Install dependencies:
    ```bash
